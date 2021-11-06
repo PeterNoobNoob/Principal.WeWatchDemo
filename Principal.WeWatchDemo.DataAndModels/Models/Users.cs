@@ -31,6 +31,7 @@ namespace Principal.WeWatchDemo.DataAndModels.Models
         public string Street { get; set; }
         public string Zip { get; set; }
         public DateTime? Created { get; set; }
+        public string ProfilePic { get; set; }
 
         [InverseProperty("Owner")]
         public virtual ICollection<Evidences> Evidences { get; set; }
